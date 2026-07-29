@@ -1,0 +1,476 @@
+/* ==========================================
+   ECOQUEST ALL REVIEWS PAGE
+========================================== */
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+
+}
+
+
+body{
+
+    background:#f5faf7;
+    color:#123524;
+
+}
+
+
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+
+.reviews-hero{
+
+    background:
+    linear-gradient(
+        rgba(13,107,70,.85),
+        rgba(13,107,70,.85)
+    ),
+    url("images/safari.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    min-height:320px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+    padding:40px 20px;
+
+}
+
+
+
+.hero-content{
+
+    max-width:700px;
+
+}
+
+
+
+.hero-content span{
+
+    background:#d9f5e7;
+
+    color:#0d6b46;
+
+    padding:8px 20px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+
+
+.hero-content h1{
+
+    font-size:45px;
+
+    margin:20px 0 12px;
+
+}
+
+
+
+.hero-content p{
+
+    font-size:17px;
+
+    line-height:1.7;
+
+}
+
+
+
+/* BACK BUTTON */
+
+.hero-content a{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:12px 25px;
+
+    background:white;
+
+    color:#0d6b46;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+.hero-content a:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/* ==========================================
+   REVIEWS CONTAINER
+========================================== */
+
+
+.review-page{
+
+    padding:60px 8%;
+
+}
+
+
+
+
+/* ==========================================
+   RATING SUMMARY
+========================================== */
+
+
+.rating-box{
+
+    width:250px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.08);
+
+    margin-bottom:50px;
+
+}
+
+
+
+.rating-box h2{
+
+    font-size:60px;
+
+    color:#0d6b46;
+
+}
+
+
+
+.stars{
+
+    font-size:26px;
+
+    margin:10px 0;
+
+}
+
+
+
+.rating-box p{
+
+    color:#777;
+
+}
+
+
+
+
+
+/* ==========================================
+   REVIEWS GRID
+========================================== */
+
+
+.all-reviews{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+
+/* ==========================================
+   REVIEW CARD
+========================================== */
+
+
+.review-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:22px;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.08);
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+}
+
+
+
+.review-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:
+    linear-gradient(
+    90deg,
+    #0d6b46,
+    #22c55e
+    );
+
+}
+
+
+
+.review-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 25px 45px rgba(0,0,0,.12);
+
+}
+
+
+
+
+
+/* USER DETAILS */
+
+
+.review-header{
+
+    display:flex;
+
+    align-items:center;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.review-avatar{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:#0d6b46;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    margin-right:15px;
+
+}
+
+
+
+.review-user h3{
+
+    font-size:18px;
+
+    color:#123524;
+
+    margin-bottom:5px;
+
+}
+
+
+
+.review-user span{
+
+    color:#777;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+/* STARS */
+
+
+.review-stars{
+
+    color:#ffc107;
+
+    font-size:20px;
+
+    margin:15px 0;
+
+}
+
+
+
+
+
+/* REVIEW TEXT */
+
+
+.review-text{
+
+    color:#555;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+}
+
+
+
+
+
+.review-date{
+
+    margin-top:20px;
+
+    color:#999;
+
+    font-size:13px;
+
+}
+
+
+
+
+/* ==========================================
+   LOADING / EMPTY
+========================================== */
+
+
+.loading,
+.no-reviews{
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    color:#0d6b46;
+
+    font-size:18px;
+
+}
+
+
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+
+@media(max-width:768px){
+
+
+.reviews-hero{
+
+    min-height:250px;
+
+}
+
+
+.hero-content h1{
+
+    font-size:32px;
+
+}
+
+
+
+.review-page{
+
+    padding:40px 20px;
+
+}
+
+
+
+.rating-box{
+
+    width:100%;
+
+}
+
+
+
+.all-reviews{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
