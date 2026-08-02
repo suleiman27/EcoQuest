@@ -1,564 +1,1538 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>EcoQuest Safaris — Unforgettable Safaris in Kenya</title>
-<meta content="Unforgettable safaris in Kenya tailored by local experts. Book Masai Mara, Amboseli, Tsavo and beach + safari packages." name="description"/>
-<link href="styles.css" rel="stylesheet"/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoQuest Safaris | Discover Kenya's Wild Beauty</title>
+
+    <meta name="description"
+        content="Experience unforgettable Kenyan safaris with EcoQuest Safaris. Explore Maasai Mara, Amboseli, Tsavo, Samburu, Diani Beach and more with local experts.">
+
+    <meta name="keywords"
+        content="Kenya Safari, Maasai Mara, Amboseli, Tsavo, EcoQuest Safaris, Kenya Tours, Wildlife Safari">
+
+    <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
-<!-- HEADER / NAV -->
-<header class="site-header">
-<nav aria-label="Main navigation" class="nav container">
-<div class="brand">EcoQuest <span class="accent">Safaris</span></div>
-<button aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation" class="nav-toggle" id="nav-toggle">☰</button>
-<ul class="nav-links" id="nav-links">
-<li><a href="#home">Home</a></li>
-<!-- PACKAGES DROPDOWN -->
-<li class="dropdown">
-<a class="dropdown-btn" href="#">Packages <span class="arrow">▾</span></a>
-<ul class="dropdown-menu" id="venue-menu">
-<li><button>Amboseli</button></li>
-<li><button>Maasai Mara</button></li>
-<li><button>Tsavo</button></li>
-<li><button>Samburu</button></li>
-<li><button>Diani</button></li>
-<li><button>Nairobi NP</button></li>
-<li><button>Lake Nakuru</button></li>
-</ul>
-</li>
-<!-- DESTINATIONS DROPDOWN -->
-<li class="dropdown">
-<a class="dropdown-btn" href="#">
-        Destinations <span class="arrow">▾</span>
-</a>
-<ul class="dropdown-menu" id="dest-menu">
-<li><button data-destination="mara">Masai Mara</button></li>
-<li><button data-destination="amboseli">Amboseli</button></li>
-<li><button data-destination="tsavo">Tsavo</button></li>
-<li><button data-destination="samburu">Samburu</button></li>
-<li><button data-destination="diani">Diani Beach</button></li>
-<li><button data-destination="nairobi">Nairobi National Park</button></li>
-<li><button data-destination="lakeNakuru">Lake Nakuru</button></li>
-</ul>
-<div class="destination-popup" id="destinationPopup">
-<h3>EcoQuest Destinations</h3>
-<p>Select a destination to learn more.</p>
-</div>
-</li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#booking">Book</a></li>
-<li><a href="#reviews">Reviews</a></li>
-</ul>
-<div class="nav-actions">
-<button class="btn btn-outline" id="dark-mode-toggle">🌙</button>
-<a class="btn btn-primary" href="#booking">Book Your Safari</a>
-</div>
-</nav>
-</header>
-<!-- HERO -->
-<section class="hero parallax" id="home">
-<div class="hero-slideshow">
-<img alt="Safari with elephants" class="slide" src="images/image1.jpeg"/>
-<img alt="Safari landscape" class="slide" src="images/image2.jpeg"/>
-<img alt="Masai Mara savannah" class="slide" src="images/image13.jpeg"/>
-</div>
-<div class="hero-overlay"></div>
-<div class="hero-content container fade-in-up">
-<h1>Unforgettable Safaris in Kenya — Tailored by Local Experts</h1>
-<p class="lead">Experience the Big Five, majestic elephants, and the Great Migration — comfort, safety, and local knowledge.</p>
-<div class="ctas">
-<a class="btn btn-primary" href="#booking">Book Your Safari</a>
-<button class="btn btn-secondary" id="quote-btn">Get a Free Quote</button>
-</div>
-</div>
-</section>
-<main>
-<!-- PACKAGES -->
-<section class="safari-section section container fade-in-up" id="packages">
-<h2 class="section-title">Safari Packages</h2>
-<div class="safari-grid">
-<article class="safari-card">
-<img alt="Tsavo West &amp; Amboseli" src="images/amboseli1.jpeg"/>
-<h3>3 Days Safari: Tsavo West &amp; Amboseli</h3>
-<p>The definitive southern Kenya safari with Mt. Kilimanjaro views and giant tuskers.</p>
-</article>
-<article class="safari-card">
-<img alt="Tsavo East &amp; Taita Hills" src="images/tsavoeast.jpeg"/>
-<h3>3 Days Safari: Tsavo East &amp; Taita Hills</h3>
-<p>Red elephants of Tsavo East + night-viewing at Salt Lick.</p>
-</article>
-<article class="safari-card">
-<img alt="Tsavo West &amp; Ngutuni" src="images/ngutuni.jpeg"/>
-<h3>3 Days Safari: Tsavo West &amp; Ngutuni</h3>
-<p>Volcanic landscapes + night game drives in Ngutuni Conservancy.</p>
-</article>
-<article class="safari-card">
-<img alt="Maasai Mara" src="images/masaimara.jpeg"/>
-<h3>3 Days Safari: Maasai Mara</h3>
-<p>Dedicated Big Cat safari in Kenya’s top park.</p>
-</article>
-<article class="safari-card">
-<img alt="Samburu" src="images/samburu.jpg"/>
-<h3>3 Days Safari: Samburu</h3>
-<p>Search for the Samburu Special Five in a northern wilderness.</p>
-</article>
-</div>
-</section>
-<!-- DESTINATIONS -->
-<section class="section container fade-in-up" id="destinations">
-<h2>Popular Destinations</h2>
-<div class="dest-cards">
-<div class="dest-card">
-<img alt="Masai Mara" src="images/Maasai Mara.jpeg"/>
-<h4>Masai Mara</h4>
-</div>
-<div class="dest-card">
-<img alt="Amboseli" src="images/Amboseli.jpeg"/>
-<h4>Amboseli</h4>
-</div>
-<div class="dest-card">
-<img alt="Nairobi National Park" src="images/nnp.jpeg"/>
-<h4>Nairobi NP</h4>
-</div>
-<div class="dest-card">
-<img alt="Tsavo" src="images/Tsavo East.jpeg"/>
-<h4>Tsavo</h4>
-</div>
-<div class="dest-card">
-<img alt="Lake Nakuru" src="images/Lake Nakuru.jpeg"/>
-<h4>Lake Nakuru</h4>
-</div>
-</div>
-</section>
-<!-- WHY CHOOSE US -->
-<section class="section container fade-in-up" id="why-choose-us">
-<h2>Why Choose Us?</h2>
-<div class="choose-grid">
-<div class="choose-card">
-<h3>Experienced Guides</h3>
-<p>Our guides know the parks intimately, ensuring safe and memorable experiences.</p>
-</div>
-<div class="choose-card">
-<h3>Luxury Lodges</h3>
-<p>Stay in comfortable lodges with great views of wildlife.</p>
-</div>
-<div class="choose-card">
-<h3>Custom Itineraries</h3>
-<p>We tailor every safari to your preferences, from 1-day trips to extended adventures.</p>
-</div>
-</div>
-</section>
-<!-- GALLERY -->
-<section class="section container fade-in" id="gallery">
-<h2>Gallery</h2>
-<div class="gallery-grid">
-<img class="gallery-item fade-in-up" src="images/image24.jpeg"/>
-<img class="gallery-item fade-in-up" src="images/image21.jpeg"/>
-<img class="gallery-item fade-in-up" src="images/amboseli1.jpeg"/>
-<img class="gallery-item fade-in-up" src="images/masaimara.jpeg"/>
-<img class="gallery-item fade-in-up" src="images/nnp.jpeg"/>
-<img class="gallery-item fade-in-up" src="images/tsavo1.jpeg"/>
-<img class="gallery-item fade-in-up" src="images/image35.jpeg"/>
 
-</div>
-<div class="gallery-btn"><a class="btn btn-primary" href="gallery.html">View Full Gallery →</a></div></section>
-<!-- ABOUT -->
-<section class="section container fade-in-up half-section" id="about">
-<h2>About Us</h2>
-<div class="about-grid">
-<div>
-<h3>EcoQuest Safaris</h3>
-<p>We are passionate Kenyan tour operators, committed to creating unforgettable safari experiences. Our licensed guides provide insider knowledge, ensuring safety, comfort, and authentic encounters with wildlife.</p>
-<h4>Our Mission</h4>
-<p>To deliver sustainable, immersive, and personalized safari adventures that celebrate Kenya’s rich landscapes and wildlife, while supporting local communities.</p>
-</div>
-</div>
-</section>
-<!-- BOOKING FORM -->
-<section class="booking-section" id="booking">
-<div class="booking-wrapper">
-<!-- LEFT SIDE -->
-<div class="booking-image">
-<img alt="Safari" src="images/image21.jpeg"/>
-<div class="booking-overlay">
-<h2>Begin Your Adventure</h2>
-<p>
-                    Discover Kenya's breathtaking wildlife,
-                    luxury lodges and unforgettable safari experiences.
-                </p>
-</div>
-</div>
-<!-- RIGHT SIDE -->
-<div class="booking-card">
-<h2>Book Your Safari</h2>
-<p>
-                Fill in your travel details and our safari expert will
-                contact you shortly.
-            </p>
-<form class="booking-grid" id="booking-form">
-<input name="fullName" placeholder="Full Name" required="" type="text"/>
-<input name="email" placeholder="Email Address" required="" type="email"/>
-<input name="phone" placeholder="Phone / WhatsApp" required="" type="tel"/>
-<input name="travellers" placeholder="Travellers" required="" type="number"/>
-<input name="travelDate" required="" type="date"/>
-<select name="destination" required="">
-<option value="">Destination</option>
-<option>Masai Mara</option>
-<option>Amboseli</option>
-<option>Tsavo</option>
-<option>Samburu</option>
-<option>Diani Beach</option>
-<option>Nairobi National Park</option>
-<option>Lake Nakuru</option>
-</select>
-<select name="budget">
-<option value="">Budget</option>
-<option value="BUDGET">Budget</option>
-<option value="MID_RANGE">Mid Range</option>
-<option value="LUXURY">Luxury</option>
-</select>
-<select id="citizenship" name="citizenship">
-<option value="">Citizenship</option>
-<option value="citizen">Kenyan Citizen</option>
-<option value="non-citizen">Non-Citizen</option>
-</select>
-<input id="idNumber" name="idNumber" placeholder="National ID" style="display:none" type="text"/>
-<input id="passportNumber" name="passportNumber" placeholder="Passport Number" style="display:none" type="text"/>
-<textarea name="notes" placeholder="Special Requests"></textarea>
-<button type="submit">
+    <!-- ======================================
+                HEADER
+    ======================================= -->
 
-                    Book My Safari
+    <header class="site-header" id="header">
+
+        <div class="container">
+
+            <nav class="nav">
+
+                <!-- Logo -->
+
+                <a href="#home" class="brand">
+
+                    EcoQuest
+                    <span>Safaris</span>
+
+                </a>
+
+                <!-- Mobile Toggle -->
+
+                <button
+                    class="nav-toggle"
+                    id="nav-toggle"
+                    aria-label="Toggle Navigation"
+                    aria-expanded="false"
+                    aria-controls="nav-links">
+
+                    ☰
 
                 </button>
-</form>
-<div class="booking-features">
-<div>✓ Secure Booking</div>
-<div>✓ Tailor-made Tours</div>
-<div>✓ Fast Response</div>
-</div>
-</div>
-</div>
-</section>
 
-<section class="reviews-section" id="reviews">
+                <!-- Navigation -->
 
+                <ul class="nav-links" id="nav-links">
 
-<div class="section-header">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
 
-<span class="section-tag">
-Customer Reviews
-</span>
+                    <!-- Destinations -->
 
+                  <ul class="nav-links" id="nav-links">
 
-<h2>
-What Our Travellers Say
-</h2>
+    <li class="dropdown">
 
+        <a href="#" class="dropdown-btn">
+            Destinations <span class="arrow">▾</span>
+        </a>
 
-<p>
-Share your Kenya adventure with EcoQuest.
-</p>
+        <div class="mega-menu">
 
+            <div class="mega-links">
 
-</div>
+                <button data-destination="mara">🦁 Masai Mara</button>
+                <button data-destination="amboseli">🐘 Amboseli</button>
+                <button data-destination="tsavo">🌋 Tsavo</button>
+                <button data-destination="samburu">🦒 Samburu</button>
+                <button data-destination="diani">🏖 Diani Beach</button>
+                <button data-destination="nairobi">🦏 Nairobi NP</button>
+                <button data-destination="lakeNakuru">🦩 Lake Nakuru</button>
 
+            </div>
 
+            <div class="mega-info" id="destinationPopup">
 
+                <h3>EcoQuest Destinations</h3>
 
+                <p>
+                    Move your mouse over any destination
+                    to learn more.
+                </p>
 
-<!-- Rating Summary -->
+            </div>
 
-<div class="review-summary">
+        </div>
 
+    </li>
 
-<div class="summary-card">
+    <li><a href="#packages">Packages</a></li>
 
+    <li><a href="#gallery">Gallery</a></li>
 
-<h1 id="averageRating">
-5.0
-</h1>
+    <li><a href="#about">About</a></li>
 
+    <li><a href="#booking">Book</a></li>
 
-<div class="summary-stars">
-⭐⭐⭐⭐⭐
-</div>
+    <li><a href="#reviews">Reviews</a></li>
 
+    <li><a href="#contact">Contact</a></li>
 
-<p>
-
-<span id="reviewCount">
-0
-</span>
-
-Reviews
-
-</p>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-<!-- Latest Reviews -->
-
-<div 
-class="reviews-grid"
-id="reviewsContainer">
-
-</div>
-
-
-
-
-
-<button 
-class="view-review-btn"
-onclick="window.location.href='reviews.html'">
-
-View All Reviews
-
-</button>
-
-
-
-
-
-<!-- =====================
- REVIEW FORM
-===================== -->
-
-
-<div class="review-form-card">
-
-
-<h2>
-Share Your Experience
-</h2>
-
-
-<p>
-Tell us about your safari.
-</p>
-
-
-
-<form id="reviewForm">
-
-
-
-<div class="form-row">
-
-
-<div class="input-group">
-
-<label>
-Name
-</label>
-
-
-<input 
-id="reviewName"
-type="text"
-required>
-
-
-</div>
-
-
-
-
-
-<div class="input-group">
-
-<label>
-Country
-</label>
-
-
-<input 
-id="reviewCountry"
-type="text"
-required>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="input-group">
-
-
-<label>
-Rating
-</label>
-
-
-<div class="rating-select">
-
-
-<label>
-<input 
-type="radio"
-name="rating"
-value="5"
-checked>
-
-⭐⭐⭐⭐⭐
-
-</label>
-
-
-<label>
-<input 
-type="radio"
-name="rating"
-value="4">
-
-⭐⭐⭐⭐
-
-</label>
-
-
-<label>
-<input 
-type="radio"
-name="rating"
-value="3">
-
-⭐⭐⭐
-
-</label>
-
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div class="input-group">
-
-
-<label>
-Review
-</label>
-
-
-<textarea
-id="reviewText"
-required></textarea>
-
-
-</div>
-
-
-
-
-
-
-
-<button 
-type="submit"
-class="submit-review-btn">
-
-Submit Review
-
-</button>
-
-
-
-<p id="reviewMessage"></p>
-
-
-
-</form>
-
-
-
-</div>
-
-
-
-</section>
-
-
-
-</main>
-
-
-<!-- BOTTOM BAR / FOOTER -->
-<!-- FOOTER -->
-<footer class="bottom-bar">
-<div class="bottom-container">
-<!-- Useful Links -->
-<div class="footer-section">
-<h4>Useful Links</h4>
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#packages">Packages</a></li>
-<li><a href="#destinations">Destinations</a></li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#contact">Contact</a></li>
 </ul>
-</div>
-<!-- Contact Form -->
-<section class="section contact-section" id="contact">
-<div class="contact-card">
-<h2>Get in Touch</h2>
-<p>Have a question or need help planning your safari? Send us a message.</p>
-<form id="contact-form">
-<input name="name" placeholder="Your Name" required="" type="text"/>
-<input name="email" placeholder="Your Email" required="" type="email"/>
-<input name="subject" placeholder="Subject" required="" type="text"/>
-<textarea id="messageBox" name="message" placeholder="Your Message..." required=""></textarea>
-<button class="btn-primary" type="submit">
-                Send Message
-            </button>
-</form>
-</div>
-</section>
-<!-- Payment Options -->
-<div class="footer-section">
-<h4>Payment Options</h4>
-<div class="payment-icons">
-<img alt="Visa" src="images/visa.jpeg"/>
-<img alt="Mastercard" src="images/mastercard.jpeg"/>
-<img alt="M-Pesa" src="images/mpesa.jpeg"/>
-</div>
-</div>
-</div>
-<div class="bottom-bar-credit">
-    © <span id="year"></span> Safari Tours Kenya. All rights reserved.
-  </div>
-</footer>
-<!-- WHATSAPP FLOATING BUTTON -->
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"/>
-<a class="float" href="https://api.whatsapp.com/send?phone=51955081075&amp;text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." target="_blank">
-<i class="fa fa-whatsapp my-float"></i>
-</a>
-<script src="script.js"></script>
+
+                <!-- Navigation Buttons -->
+
+                <div class="nav-actions">
+
+                    <button
+                        id="dark-mode-toggle"
+                        class="btn btn-outline"
+                        aria-label="Toggle Dark Mode">
+
+                        🌙
+
+                    </button>
+
+                    <a href="#booking" class="btn btn-primary">
+
+                        Book Your Safari
+
+                    </a>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- ======================================
+                HERO SECTION
+    ======================================= -->
+
+    <section class="hero" id="home">
+
+        <!-- Background Slideshow -->
+
+        <div class="hero-slideshow">
+
+            <img
+                src="images/image1.jpeg"
+                alt="Safari Jeep"
+                class="slide active">
+
+            <img
+                src="images/image2.jpeg"
+                alt="Elephants in Amboseli"
+                class="slide">
+
+            <img
+                src="images/image13.jpeg"
+                alt="Maasai Mara Sunset"
+                class="slide">
+
+        </div>
+
+        <!-- Overlay -->
+
+        <div class="hero-overlay"></div>
+
+        <!-- Hero Content -->
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+
+                    🇰🇪 Trusted Kenyan Safari Experts
+
+                </span>
+
+                <h1>
+
+                    Explore Kenya's
+                    Wild Beauty With
+                    EcoQuest Safaris
+
+                </h1>
+
+                <p>
+
+                    Experience unforgettable wildlife adventures,
+                    luxury lodges, breathtaking landscapes and
+                    personalized safari experiences designed by
+                    local experts.
+
+                </p>
+
+                <!-- Hero Buttons -->
+
+                <div class="hero-buttons">
+
+                    <a href="#booking" class="btn btn-primary">
+
+                        Book Your Safari
+
+                    </a>
+
+                    <a href="#contact" class="btn btn-secondary">
+
+                        Get Free Quote
+
+                    </a>
+
+                </div>
+
+                <!-- Statistics -->
+
+                <div class="hero-stats">
+
+                    <div class="stat">
+
+                        <h2>
+
+                            500+
+
+                        </h2>
+
+                        <p>
+
+                            Happy Travellers
+
+                        </p>
+
+                    </div>
+
+                    <div class="stat">
+
+                        <h2>
+
+                            7+
+
+                        </h2>
+
+                        <p>
+
+                            Destinations
+
+                        </p>
+
+                    </div>
+
+                    <div class="stat">
+
+                        <h2>
+
+                            10+
+
+                        </h2>
+
+                        <p>
+
+                            Years Experience
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================
+                MAIN CONTENT
+    ======================================= -->
+
+    <main>
+
+                <!-- ======================================
+                    SAFARI PACKAGES
+        ======================================= -->
+
+        <section class="section packages-section" id="packages">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-tag">
+                        Our Safari Packages
+                    </span>
+
+                    <h2>
+                        Handcrafted Safari Adventures
+                    </h2>
+
+                    <p>
+                        Whether you're visiting Kenya for the first time or returning for another adventure,
+                        we have carefully designed safari packages for every traveller.
+                    </p>
+
+                </div>
+
+                <div class="safari-grid">
+
+                    <article class="safari-card">
+
+                        <div class="card-image">
+
+                            <img src="images/amboseli1.jpeg"
+                                 alt="Tsavo West and Amboseli Safari">
+
+                            <span class="card-days">
+                                3 Days
+                            </span>
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <h3>
+                                Tsavo West & Amboseli
+                            </h3>
+
+                            <p>
+                                Discover volcanic landscapes, giant elephants and spectacular
+                                views of Mount Kilimanjaro.
+                            </p>
+
+                            <a href="#booking" class="card-btn">
+                                Book This Safari →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <article class="safari-card">
+
+                        <div class="card-image">
+
+                            <img src="images/tsavoeast.jpeg"
+                                 alt="Tsavo East Safari">
+
+                            <span class="card-days">
+                                3 Days
+                            </span>
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <h3>
+                                Tsavo East & Taita Hills
+                            </h3>
+
+                            <p>
+                                Experience Kenya's famous red elephants,
+                                Salt Lick Lodge and unforgettable game drives.
+                            </p>
+
+                            <a href="#booking" class="card-btn">
+                                Book This Safari →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <article class="safari-card">
+
+                        <div class="card-image">
+
+                            <img src="images/ngutuni.jpeg"
+                                 alt="Ngutuni Safari">
+
+                            <span class="card-days">
+                                3 Days
+                            </span>
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <h3>
+                                Tsavo West & Ngutuni
+                            </h3>
+
+                            <p>
+                                Explore lava fields, wildlife conservancies
+                                and exciting night game drives.
+                            </p>
+
+                            <a href="#booking" class="card-btn">
+                                Book This Safari →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <article class="safari-card">
+
+                        <div class="card-image">
+
+                            <img src="images/masaimara.jpeg"
+                                 alt="Maasai Mara Safari">
+
+                            <span class="card-days">
+                                3 Days
+                            </span>
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <h3>
+                                Maasai Mara Safari
+                            </h3>
+
+                            <p>
+                                Witness the Big Five and the incredible Great Migration
+                                in Africa's most iconic reserve.
+                            </p>
+
+                            <a href="#booking" class="card-btn">
+                                Book This Safari →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <article class="safari-card">
+
+                        <div class="card-image">
+
+                            <img src="images/samburu.jpg"
+                                 alt="Samburu Safari">
+
+                            <span class="card-days">
+                                3 Days
+                            </span>
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <h3>
+                                Samburu Adventure
+                            </h3>
+
+                            <p>
+                                Discover northern Kenya and search
+                                for the unique Samburu Special Five.
+                            </p>
+
+                            <a href="#booking" class="card-btn">
+                                Book This Safari →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================
+                    DESTINATIONS
+        ======================================= -->
+
+        <section class="section destinations-section" id="destinations">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-tag">
+                        Top Destinations
+                    </span>
+
+                    <h2>
+                        Explore Kenya's Most Beautiful Places
+                    </h2>
+
+                </div>
+
+                <div class="destinations-grid">
+
+                    <article class="destination-card">
+
+                        <img src="images/Maasai Mara.jpeg"
+                             alt="Maasai Mara">
+
+                        <div class="destination-info">
+
+                            <h3>Maasai Mara</h3>
+
+                            <p>
+                                Home of the Great Migration and the Big Five.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article class="destination-card">
+
+                        <img src="images/Amboseli.jpeg"
+                             alt="Amboseli">
+
+                        <div class="destination-info">
+
+                            <h3>Amboseli</h3>
+
+                            <p>
+                                Famous for elephants and Mount Kilimanjaro views.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article class="destination-card">
+
+                        <img src="images/Tsavo East.jpeg"
+                             alt="Tsavo">
+
+                        <div class="destination-info">
+
+                            <h3>Tsavo</h3>
+
+                            <p>
+                                Kenya's largest national park with red elephants.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article class="destination-card">
+
+                        <img src="images/nnp.jpeg"
+                             alt="Nairobi National Park">
+
+                        <div class="destination-info">
+
+                            <h3>Nairobi National Park</h3>
+
+                            <p>
+                                Wildlife just minutes from the capital city.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article class="destination-card">
+
+                        <img src="images/Lake Nakuru.jpeg"
+                             alt="Lake Nakuru">
+
+                        <div class="destination-info">
+
+                            <h3>Lake Nakuru</h3>
+
+                            <p>
+                                Rhinos, flamingos and breathtaking scenery.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================
+                    WHY CHOOSE US
+        ======================================= -->
+
+        <section class="section why-section" id="why-choose-us">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-tag">
+                        Why EcoQuest
+                    </span>
+
+                    <h2>
+                        Why Travel With EcoQuest Safaris?
+                    </h2>
+
+                </div>
+
+                <div class="choose-grid">
+
+                    <div class="choose-card">
+
+                        <div class="choose-icon">
+                            🦁
+                        </div>
+
+                        <h3>
+                            Experienced Guides
+                        </h3>
+
+                        <p>
+                            Passionate local professionals with years
+                            of safari experience.
+                        </p>
+
+                    </div>
+
+                    <div class="choose-card">
+
+                        <div class="choose-icon">
+                            🏕️
+                        </div>
+
+                        <h3>
+                            Luxury Accommodation
+                        </h3>
+
+                        <p>
+                            Carefully selected lodges and camps offering
+                            exceptional comfort.
+                        </p>
+
+                    </div>
+
+                    <div class="choose-card">
+
+                        <div class="choose-icon">
+                            🚙
+                        </div>
+
+                        <h3>
+                            Tailor-Made Safaris
+                        </h3>
+
+                        <p>
+                            Every itinerary is customised to match your
+                            travel style and budget.
+                        </p>
+
+                    </div>
+
+                    <div class="choose-card">
+
+                        <div class="choose-icon">
+                            🌍
+                        </div>
+
+                        <h3>
+                            Sustainable Tourism
+                        </h3>
+
+                        <p>
+                            Supporting local communities while protecting
+                            Kenya's incredible wildlife.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================
+                    GALLERY
+        ======================================= -->
+
+        <section class="section gallery-section" id="gallery">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-tag">
+                        Gallery
+                    </span>
+
+                    <h2>
+                        Moments Worth Remembering
+                    </h2>
+
+                </div>
+
+                <div class="gallery-grid">
+
+                    <img src="images/image24.jpeg" alt="Safari">
+
+                    <img src="images/image21.jpeg" alt="Safari">
+
+                    <img src="images/amboseli1.jpeg" alt="Amboseli">
+
+                    <img src="images/masaimara.jpeg" alt="Maasai Mara">
+
+                    <img src="images/nnp.jpeg" alt="Nairobi National Park">
+
+                    <img src="images/tsavo1.jpeg" alt="Tsavo">
+
+                    <img src="images/image35.jpeg" alt="Wildlife">
+
+                    <img src="images/image13.jpeg" alt="Kenya Safari">
+
+                </div>
+
+                <div class="gallery-button">
+
+                    <a href="gallery.html" class="btn btn-primary">
+
+                        View Full Gallery →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+                <!-- ======================================
+                    ABOUT US
+        ======================================= -->
+
+        <section class="section about-section" id="about">
+
+            <div class="container">
+
+                <div class="about-grid">
+
+                    <div class="about-image">
+
+                        <img
+                            src="images/image21.jpeg"
+                            alt="EcoQuest Safari Vehicle">
+
+                    </div>
+
+                    <div class="about-content">
+
+                        <span class="section-tag">
+
+                            About EcoQuest
+
+                        </span>
+
+                        <h2>
+
+                            Passionate About Kenya,
+                            Dedicated To You
+
+                        </h2>
+
+                        <p>
+
+                            EcoQuest Safaris is a proudly Kenyan tour company
+                            committed to creating unforgettable wildlife
+                            adventures. From the iconic Maasai Mara to the
+                            breathtaking Amboseli plains, we help travellers
+                            experience Kenya through authentic, safe and
+                            personalized safari journeys.
+
+                        </p>
+
+                        <p>
+
+                            Every safari is carefully planned by experienced
+                            local experts to ensure comfort, safety and
+                            unforgettable encounters with Africa's magnificent
+                            wildlife.
+
+                        </p>
+
+                        <div class="about-features">
+
+                            <div class="feature">
+
+                                <span>✔</span>
+
+                                <p>Licensed Safari Guides</p>
+
+                            </div>
+
+                            <div class="feature">
+
+                                <span>✔</span>
+
+                                <p>Luxury & Budget Packages</p>
+
+                            </div>
+
+                            <div class="feature">
+
+                                <span>✔</span>
+
+                                <p>Custom Travel Planning</p>
+
+                            </div>
+
+                            <div class="feature">
+
+                                <span>✔</span>
+
+                                <p>24/7 Customer Support</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================
+                    BOOKING SECTION
+        ======================================= -->
+
+        <section class="booking-section" id="booking">
+
+            <div class="container">
+
+                <div class="booking-wrapper">
+
+                    <!-- LEFT SIDE -->
+
+                    <div class="booking-image">
+
+                        <img
+                            src="images/image21.jpeg"
+                            alt="Luxury Safari">
+
+                        <div class="booking-overlay">
+
+                            <span class="section-tag">
+
+                                Your Adventure Starts Here
+
+                            </span>
+
+                            <h2>
+
+                                Begin Your Kenyan Safari
+
+                            </h2>
+
+                            <p>
+
+                                Discover breathtaking wildlife,
+                                luxury accommodation and unforgettable
+                                adventures with EcoQuest Safaris.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT SIDE -->
+
+                    <div class="booking-card">
+
+                        <h2>
+
+                            Book Your Safari
+
+                        </h2>
+
+                        <p>
+
+                            Complete the form below and one of our
+                            safari consultants will contact you shortly.
+
+                        </p>
+
+                        <form
+                            id="booking-form"
+                            class="booking-grid">
+
+                            <input
+                                type="text"
+                                name="fullName"
+                                placeholder="Full Name"
+                                required>
+
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Email Address"
+                                required>
+
+                            <input
+                                type="tel"
+                                name="phone"
+                                placeholder="Phone / WhatsApp"
+                                required>
+
+                            <input
+                                type="number"
+                                name="travellers"
+                                placeholder="Number of Travellers"
+                                required>
+
+                            <input
+                                type="date"
+                                name="travelDate"
+                                required>
+
+                            <select
+                                name="destination"
+                                required>
+
+                                <option value="">
+                                    Select Destination
+                                </option>
+
+                                <option>
+                                    Maasai Mara
+                                </option>
+
+                                <option>
+                                    Amboseli
+                                </option>
+
+                                <option>
+                                    Tsavo
+                                </option>
+
+                                <option>
+                                    Samburu
+                                </option>
+
+                                <option>
+                                    Diani Beach
+                                </option>
+
+                                <option>
+                                    Nairobi National Park
+                                </option>
+
+                                <option>
+                                    Lake Nakuru
+                                </option>
+
+                            </select>
+
+                            <select name="budget">
+
+                                <option value="">
+                                    Budget
+                                </option>
+
+                                <option value="BUDGET">
+                                    Budget
+                                </option>
+
+                                <option value="MID_RANGE">
+                                    Mid Range
+                                </option>
+
+                                <option value="LUXURY">
+                                    Luxury
+                                </option>
+
+                            </select>
+
+                            <select
+                                id="citizenship"
+                                name="citizenship">
+
+                                <option value="">
+                                    Citizenship
+                                </option>
+
+                                <option value="citizen">
+                                    Kenyan Citizen
+                                </option>
+
+                                <option value="non-citizen">
+                                    Non-Citizen
+                                </option>
+
+                            </select>
+
+                            <input
+                                id="idNumber"
+                                name="idNumber"
+                                type="text"
+                                placeholder="National ID"
+                                style="display:none;">
+
+                            <input
+                                id="passportNumber"
+                                name="passportNumber"
+                                type="text"
+                                placeholder="Passport Number"
+                                style="display:none;">
+
+                            <textarea
+                                name="notes"
+                                placeholder="Special Requests"></textarea>
+
+                            <button type="submit">
+
+                                Book My Safari
+
+                            </button>
+
+                        </form>
+
+                        <div class="booking-features">
+
+                            <div>✔ Secure Booking</div>
+
+                            <div>✔ Tailor-Made Tours</div>
+
+                            <div>✔ Fast Response</div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================
+                    REVIEWS
+        ======================================= -->
+
+        <section class="reviews-section" id="reviews">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-tag">
+
+                        Customer Reviews
+
+                    </span>
+
+                    <h2>
+
+                        What Our Travellers Say
+
+                    </h2>
+
+                    <p>
+
+                        Read genuine experiences from guests who explored
+                        Kenya with EcoQuest Safaris.
+
+                    </p>
+
+                </div>
+
+                <!-- SUMMARY -->
+
+                <div class="review-summary">
+
+                    <div class="summary-card">
+
+                        <h1 id="averageRating">
+
+                            5.0
+
+                        </h1>
+
+                        <div class="summary-stars">
+
+                            ⭐⭐⭐⭐⭐
+
+                        </div>
+
+                        <p>
+
+                            <span id="reviewCount">
+
+                                0
+
+                            </span>
+
+                            Reviews
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- REVIEWS -->
+
+                <div
+                    class="reviews-grid"
+                    id="reviewsContainer">
+
+                </div>
+
+                <div class="reviews-button">
+
+                    <button
+                        class="view-review-btn"
+                        onclick="window.location.href='reviews.html'">
+
+                        View All Reviews
+
+                    </button>
+
+                </div>
+
+                <!-- REVIEW FORM -->
+
+                <div class="review-form-card">
+
+                    <h2>
+
+                        Share Your Experience
+
+                    </h2>
+
+                    <p>
+
+                        We'd love to hear about your safari adventure.
+
+                    </p>
+
+                    <form id="reviewForm">
+
+                        <div class="form-row">
+
+                            <div class="input-group">
+
+                                <label>
+
+                                    Name
+
+                                </label>
+
+                                <input
+                                    id="reviewName"
+                                    type="text"
+                                    required>
+
+                            </div>
+
+                            <div class="input-group">
+
+                                <label>
+
+                                    Country
+
+                                </label>
+
+                                <input
+                                    id="reviewCountry"
+                                    type="text"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>
+
+                                Rating
+
+                            </label>
+
+                            <div class="rating-select">
+
+                                <label><input type="radio" name="rating" value="5" checked>⭐⭐⭐⭐⭐</label>
+
+                                <label><input type="radio" name="rating" value="4">⭐⭐⭐⭐</label>
+
+                                <label><input type="radio" name="rating" value="3">⭐⭐⭐</label>
+
+                            </div>
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>
+
+                                Review
+
+                            </label>
+
+                            <textarea
+                                id="reviewText"
+                                required></textarea>
+
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="submit-review-btn">
+
+                            Submit Review
+
+                        </button>
+
+                        <p id="reviewMessage"></p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+                <!-- ======================================
+                    CONTACT SECTION
+        ======================================= -->
+
+        <section class="section contact-section" id="contact">
+
+            <div class="container">
+
+                <div class="contact-wrapper">
+
+                    <!-- Contact Information -->
+
+                    <div class="contact-info">
+
+                        <span class="section-tag">
+
+                            Contact Us
+
+                        </span>
+
+                        <h2>
+
+                            Let's Plan Your Dream Safari
+
+                        </h2>
+
+                        <p>
+
+                            Have questions about our safari packages or need a
+                            customised itinerary? Send us a message and our team
+                            will get back to you as soon as possible.
+
+                        </p>
+
+                        <div class="contact-details">
+
+                            <div class="contact-item">
+
+                                <div class="contact-icon">
+                                    📍
+                                </div>
+
+                                <div>
+
+                                    <h4>Location</h4>
+
+                                    <p>
+                                        Kenya
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="contact-item">
+
+                                <div class="contact-icon">
+                                    📞
+                                </div>
+
+                                <div>
+
+                                    <h4>Phone</h4>
+
+                                    <p>
+                                        +254 708 189 577
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="contact-item">
+
+                                <div class="contact-icon">
+                                    ✉️
+                                </div>
+
+                                <div>
+
+                                    <h4>Email</h4>
+
+                                    <p>
+                                        info@ecoquestsafaris.com
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Contact Form -->
+
+                    <div class="contact-card">
+
+                        <form id="contact-form">
+
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Your Name"
+                                required>
+
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Your Email"
+                                required>
+
+                            <input
+                                type="text"
+                                name="subject"
+                                placeholder="Subject"
+                                required>
+
+                            <textarea
+                                id="messageBox"
+                                name="message"
+                                placeholder="Your Message..."
+                                required></textarea>
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary">
+
+                                Send Message
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ======================================
+                FOOTER
+    ======================================= -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <!-- Company -->
+
+                <div class="footer-column">
+
+                    <h3>
+
+                        EcoQuest
+                        <span>Safaris</span>
+
+                    </h3>
+
+                    <p>
+
+                        Creating unforgettable safari experiences
+                        across Kenya through personalised,
+                        sustainable and authentic adventures.
+
+                    </p>
+
+                </div>
+
+                <!-- Quick Links -->
+
+                <div class="footer-column">
+
+                    <h4>
+
+                        Quick Links
+
+                    </h4>
+
+                    <ul>
+
+                        <li><a href="#home">Home</a></li>
+
+                        <li><a href="#packages">Safari Packages</a></li>
+
+                        <li><a href="#destinations">Destinations</a></li>
+
+                        <li><a href="#gallery">Gallery</a></li>
+
+                        <li><a href="#about">About</a></li>
+
+                        <li><a href="#booking">Book Safari</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+
+                <div class="footer-column">
+
+                    <h4>
+
+                        Contact
+
+                    </h4>
+
+                    <ul>
+
+                        <li>📞 +254 708 189 577</li>
+
+                        <li>✉️ info@ecoquestsafaris.com</li>
+
+                        <li>📍 Kenya</li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Payment -->
+
+                <div class="footer-column">
+
+                    <h4>
+
+                        Payment Methods
+
+                    </h4>
+
+                    <div class="payment-icons">
+
+                        <img
+                            src="images/visa.jpeg"
+                            alt="Visa">
+
+                        <img
+                            src="images/mastercard.jpeg"
+                            alt="Mastercard">
+
+                        <img
+                            src="images/mpesa.jpeg"
+                            alt="M-Pesa">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+
+                    © <span id="year"></span>
+                    EcoQuest Safaris.
+                    All Rights Reserved.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ======================================
+                WHATSAPP BUTTON
+    ======================================= -->
+
+    <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <a
+        class="wa-float"
+        href="https://api.whatsapp.com/send?phone=254708189577&text=Hello%20EcoQuest%20Safaris,%20I%20would%20like%20to%20book%20a%20safari."
+        target="_blank"
+        aria-label="Chat with us on WhatsApp">
+
+        <i class="fa fa-whatsapp my-float"></i>
+
+    </a>
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>

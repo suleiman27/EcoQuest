@@ -27,6 +27,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Serve frontend
 app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "admin/pages")));
 
 
 // API Routes
@@ -37,7 +38,6 @@ app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 app.use("/api/dashboard", dashboardRoutes);
 app.use("/api/customers", customerRoutes);
-app.use("/api/destinations",destinationRoutes);
 app.use("/api/settings", settingsRoutes);
 
 
