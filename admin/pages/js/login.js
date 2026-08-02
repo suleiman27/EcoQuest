@@ -59,7 +59,7 @@ loginForm.addEventListener("submit", async(e)=>{
 
 
         const response = await fetch(
-            "https://ecoquest-1-dq9u.onrender.com",
+            "https://ecoquest-1-dq9u.onrender.com/api/auth/login",
             {
 
                 method:"POST",
