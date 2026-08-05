@@ -20,8 +20,11 @@ const app = express();
 // Middleware
 // ===============================
 app.use(cors({
-    origin: "https://suleiman27.github.io",
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    origin: [
+        "https://ecoquest-1-12jk.onrender.com",
+        "https://suleiman27.github.io"
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true
 }));
 

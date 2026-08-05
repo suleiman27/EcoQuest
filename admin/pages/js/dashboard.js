@@ -24,7 +24,11 @@ async function loadDashboard() {
         // Fetch Bookings
         // =========================
 
-        const bookingResponse = await fetch("http://localhost:5000/api/bookings", {
+    const bookingResponse = await fetch("https://ecoquest-1-12jk.onrender.com/api/bookings", {
+    headers: {
+        Authorization: `Bearer ${token}`
+    }
+});
 
             headers: {
 
@@ -52,7 +56,7 @@ async function loadDashboard() {
         // Fetch Messages
         // =========================
 
-        const messageResponse = await fetch("http://localhost:5000/api/messages", {
+        const messageResponse = await fetch("https://ecoquest-1-12jk.onrender.com/api/messages", {
 
             headers: {
 
@@ -82,7 +86,7 @@ async function loadDashboard() {
         // Fetch Reviews
         // =========================
 
-        const reviewResponse = await fetch("http://localhost:5000/api/reviews");
+        const reviewResponse = await fetch("https://ecoquest-1-12jk.onrender.com/api/reviews");
 
 
         let reviews = [];
